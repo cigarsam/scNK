@@ -9,16 +9,20 @@
 <p>
 
 Unprocessed scRNA of NK 
-1st. Merge the 4x samples
-
-Below is the non-integrated RNA 
-
+Unintegrated RNA of ("CSTX_4-results_human", "CSTX_7-results_human", "HMY2_4-results_human", "HMY2_7-results_human")
+Compare C vs H differential expression [Ranked sum - insufficient samples for DESEQ2 comparison]
 </p>
 
 <!--begin.rcode
 markers <- readRDS("CvsH.RDS")
 print(markers)
 end.rcode-->
+
+
+<p>
+
+## For Kurtis -- knitr::knit2html("index.Rmd", output="index.html")
+</p>
 
 </body>
 </html>

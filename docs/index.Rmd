@@ -1,28 +1,25 @@
-<html>
+---
+title: "My R Markdown Example"
+output: html_document
+---
 
-<head>
-<title>scRNA - NK with varied feeder cells</title>
-</head>
+## Overview
 
-<body>
+Unintegrated RNA of the following datasets:
+- "CSTX_4-results_human"
+- "CSTX_7-results_human"
+- "HMY2_4-results_human"
+- "HMY2_7-results_human"
 
-<p>
+Comparison: C vs H differential expression (Ranked sum - insufficient samples for DESEQ2 comparison)
 
-Unprocessed scRNA of NK 
-Unintegrated RNA of ("CSTX_4-results_human", "CSTX_7-results_human", "HMY2_4-results_human", "HMY2_7-results_human")
-Compare C vs H differential expression [Ranked sum - insufficient samples for DESEQ2 comparison]
-</p>
 
-<!--begin.rcode
+```{r}
 markers <- readRDS("CvsH.RDS")
 print(markers)
-end.rcode-->
+
+```
 
 
-<p>
 
 ## For Kurtis -- knitr::knit2html("index.Rmd", output="index.html")
-</p>
-
-</body>
-</html>

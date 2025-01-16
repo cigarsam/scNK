@@ -17,9 +17,13 @@ Comparison: C vs H differential expression (Ranked sum - insufficient samples fo
 ```{r}
 markers <- readRDS("CvsH.RDS")
 print(markers)
-
+seurat_object <- readRDS("so.RDS")
+VlnPlot(object = seurat_object, features=c("GZMB", "GZMA"), group.by="Feeder")
 ```
 
 
 
-## For Kurtis -- knitr::knit2html("index.Rmd", output="index.html")
+For Kurtis: rmarkdown::render("index.Rmd", output_file = "index.html")
+cd /Users/kurtisstefan/Documents/Byrd/NK_scRNA
+git add ./docs; git commit -m "new"; git push
+
